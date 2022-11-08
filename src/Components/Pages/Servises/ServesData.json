@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "icon": "/icon/web-design.gif",
+    "title": "Dev Design",
+    "dec": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam ea ratione quo rem accusamus iste. Aut esse labore odio, suscipit sint incidunt  "
+  },
+  {
+    "id": "2",
+    "icon": "icon/web-design.gif",
+    "title": "Web Development",
+    "dec": "Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other  "
+  },
+  {
+    "id": "3",
+    "icon": "fa-solid fa-envelope",
+    "title": "digital marketing",
+    "dec": "The societal marketing concept adopts the position that marketers have a greater social responsibility than simply satisfying customers and providing them with superior value. Instead, marketing activities should strive to benefit society's overall well-being  "
+  }
+]
