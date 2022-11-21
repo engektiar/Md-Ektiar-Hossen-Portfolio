@@ -4,10 +4,11 @@
 .titleClore {
   color: #6d28d9;
 }
+
 .textclor {
   color: #363c4c;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 23px;
   text-align: justify;
 }
 .subtitle {
@@ -17,9 +18,9 @@
   font-weight: bolder;
 }
 .hadingTitle {
-  font-size: 48px;
+  font-size: 30px;
   color: #0f1629;
-  line-height: 40px;
+  line-height: 30px;
 }
 .sectionbg {
   background: #ffffff;
@@ -44,9 +45,7 @@
   font-weight: 600;
   letter-spacing: 5px;
   position: relative;
-  margin: 60px 0px;
   text-transform: capitalize;
-  margin-top: 0px;
 }
 .section-title h1::after {
   content: "";

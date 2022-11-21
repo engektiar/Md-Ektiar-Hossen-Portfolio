@@ -2,14 +2,11 @@ import { Button, Container, Grid, Typography } from "@mui/material";
 import { FaDownload } from "react-icons/fa";
 import { MdDoubleArrow } from "react-icons/md";
 import styled from "styled-components";
-import shafiqul from "../assets/images/Shafiqul .png";
+import ektiar from "../assets/images/ektiar.png";
 import Typewriter from "typewriter-effect";
 import Social from "../SocialIcone/Social";
 import abicon from "../assets/images/aboutsicon.svg";
 const Section = styled.section`
-  .about {
-    margin: 0 auto !important;
-  }
   & h4 {
     font-size: 22px;
     line-height: 30px;
@@ -81,7 +78,7 @@ const ContentArea = styled.div`
   & h1 {
     background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 400%;
-    font-size: 50px;
+    font-size: 0px;
     font-weight: 700;
     word-spacing: 5px;
     -webkit-text-fill-color: transparent;
@@ -117,20 +114,16 @@ const About = () => {
   return (
     <Section className="sectionStart">
       <Container>
-        {/* <div className="icons">
-          <img className="titleicon" src={abicon} alt="" />
-        </div> */}
         <div className="section-title">
           <h1>About</h1>
         </div>
-
         <Grid container spacing={5} className="about">
-          <Grid item md={5}>
+          <Grid item md={6}>
             <ContentArea>
               <h2>
-                <span style={{ color: "#ee0c0c", fontSize: "1.5em" }}> Hello, I’m </span>
+                <span style={{ color: "#ee0c0c", fontSize: "1em" }}> Hello, I’m </span>
               </h2>
-              <h1>Md. Shafiqul Islam</h1>
+              <h1>Md.Ektiar Hossen</h1>
               <h4 className="autotyle">
                 I work with ,
                 <span>
@@ -177,9 +170,9 @@ const About = () => {
               Download CV &nbsp; <FaDownload />{" "}
             </CustBtn>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={6}>
             <div className="aboutperson">
-              <img className="aboutimg" src={shafiqul} alt="no img" />
+              <img className="aboutimg" src={ektiar} alt="no img" />
             </div>
           </Grid>
         </Grid>

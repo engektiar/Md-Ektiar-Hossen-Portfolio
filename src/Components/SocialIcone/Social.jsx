@@ -9,14 +9,15 @@ const Section = styled.section`
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
 
     & a {
       margin: 0;
       font-size: 30px;
-      color: #fff;
+      color: #000000;
       margin-right: 15px;
+      cursor: pointer;
       &:hover {
         color: #fbd7df;
       }

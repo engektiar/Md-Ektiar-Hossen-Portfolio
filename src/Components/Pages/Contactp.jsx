@@ -8,20 +8,20 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
+import InputField from "@mui/material/TextField";
 const Section = styled.section`
-  margin-top: 50px;
-  background: #ecf0f3;
-  height: auto;
   padding-bottom: 50px;
-
+  .contactpage {
+    height: 640px;
+    margin-top: 50px;
+  }
   .thumbnail {
     display: flex;
     justify-content: center;
   }
   .contactimg {
-    padding: 15px;
-    height: 300px;
+    height: 250px;
+    width: 100%;
   }
   .title {
     font-size: 29px;
@@ -32,16 +32,19 @@ const Section = styled.section`
   .contact-about-area {
     background: #f9fbfb;
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    height: 700px;
+    height: 600px;
   }
-  .contact-form-wrapper {
-    background: #e5eaee;
+
+  .formsecton {
+    background: #f9fbfb;
     border-radius: 10px;
-    height: 620px;
-    padding: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 600px;
   }
+
   .title-area {
     line-height: 10px;
   }
@@ -71,7 +74,7 @@ const Section = styled.section`
     margin-bottom: 15px;
   }
   .social-icone {
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     justify-content: left;
     margin-left: -15px;
@@ -97,27 +100,21 @@ const Section = styled.section`
     color: #fff;
   }
   /* from area start */
-  .contact-form-wrapper {
-    height: 700px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    background: #fff;
-  }
+
   .fromtitle {
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 700;
   }
-  .form-group {
-  }
-  .inputfile {
+  .fromdescripton {
     width: 100%;
-    height: 48px;
-    padding: 3px 2px;
-    outline: none;
+    margin-bottom: 20px;
   }
-  .fromdescription {
-    height: 150px;
+  .inputfild {
+    margin: 10px 0px;
+    width: 100%;
+    outline: none;
   }
 
   .submit {
@@ -150,7 +147,7 @@ const Title = styled.h1`
   font-weight: 600;
   letter-spacing: 5px;
   position: relative;
-  margin: 60px 0px;
+  /* margin: 60px 0px;  */
   text-transform: capitalize;
   &:after {
     position: absolute;
@@ -168,118 +165,94 @@ function Mycontact(props) {
     <Section>
       <Container>
         <Title>Contact With Me</Title>
-        <Grid container spacing={5}>
-          <Grid item xs={5}>
-            <div className="contact-about-area">
-              <div className="thumbnail">
-                <img src={c2} alt="" className="contactimg" />
-              </div>
-              <div className="title-area">
-                <h4 className="title">Md Ektiar Hossen</h4>
-                <span>Junior Front End Developer</span>
-              </div>
-              <div className="description">
-                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
-                <div className="contactnumber">
-                  <div>
-                    <span className="names">
-                      Phone:
-                      <a href="#" className="contact">
-                        +01628414116
-                      </a>
-                    </span>
-                  </div>
-                  <div>
-                    <span className="names">
-                      Email:
-                      <a href="#" className="contact">
-                        eng.ektiar@gmail.com
-                      </a>
-                    </span>
-                  </div>
+        <div className="contactpage">
+          <Grid container spacing={2}>
+            <Grid item md={6}>
+              <div className="contact-about-area">
+                <div className="thumbnail">
+                  <img src={c2} alt="" className="contactimg" />
                 </div>
-              </div>
-              <div className="social-area">
-                <div className="name">FIND WITH ME</div>
-                <div className="social-icone">
-                  <div className="icon">
-                    <a href="#">
-                      <FacebookIcon className="contIcon" />
-                    </a>
-                  </div>
-                  <div className="icon">
-                    <a href="#">
-                      <LinkedInIcon className="contIcon" />
-                    </a>
-                  </div>
-                  <div className="icon">
-                    <a href="#">
-                      <WhatsAppIcon className="contIcon" />
-                    </a>
-                  </div>
-
-                  <div className="icon">
-                    <a href="#">
-                      <InstagramIcon className="contIcon" />
-                    </a>
-                  </div>
+                <div className="title-area">
+                  <h4 className="title">Md Ektiar Hossen</h4>
+                  <span>Junior Front End Developer</span>
                 </div>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={7}>
-            <div className="contact-form-wrapper">
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
-                  <form>
-                    <div className="form-group">
-                      <label className="fromtitle">First Name </label>
-                      <input type="text" name="name" className="inputfile" rows={2} />
+                <div className="description">
+                  <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                  <div className="contactnumber">
+                    <div>
+                      <span className="names">
+                        Phone:
+                        <a href="#" className="contact">
+                          +01628414116
+                        </a>
+                      </span>
                     </div>
-                  </form>
-                </Grid>
-                <Grid item xs={6}>
-                  <div className="form-group">
-                    <label className="fromtitle">Last name </label>
-                    <input type="text" name="name" className="inputfile" />
+                    <div>
+                      <span className="names">
+                        Email:
+                        <a href="#" className="contact">
+                          eng.ektiar@gmail.com
+                        </a>
+                      </span>
+                    </div>
                   </div>
-                </Grid>
-                <Grid item xs={12}>
-                  <div className="form-group">
-                    <label className="fromtitle"> Your Phone Number</label>
-                    <input type="email" name="name" className="inputfile" />
+                </div>
+                <div className="social-area">
+                  <div className="name">FIND WITH ME</div>
+                  <div className="social-icone">
+                    <div className="icon">
+                      <a href="#">
+                        <FacebookIcon className="contIcon" />
+                      </a>
+                    </div>
+                    <div className="icon">
+                      <a href="#">
+                        <LinkedInIcon className="contIcon" />
+                      </a>
+                    </div>
+                    <div className="icon">
+                      <a href="#">
+                        <WhatsAppIcon className="contIcon" />
+                      </a>
+                    </div>
+
+                    <div className="icon">
+                      <a href="#">
+                        <InstagramIcon className="contIcon" />
+                      </a>
+                    </div>
                   </div>
-                </Grid>
-                <Grid item xs={12}>
-                  <div className="form-group">
-                    <label className="fromtitle"> Email </label>
-                    <input type="email" name="name" className="inputfile" />
-                  </div>
-                </Grid>
-                <Grid item xs={12}>
-                  <div className="form-group">
-                    <label className="fromtitle"> subject </label>
-                    <input type="text" name="name" className="inputfile" />
-                  </div>
-                </Grid>
-                <Grid item xs={12}>
-                  <div className="form-group">
-                    <label className="fromtitle"> Your message </label>
-                    <TextField fullWidth varitent="text" multiline rows={7} id="fullWidth" className="description" />
-                  </div>
-                </Grid>
-                <Grid item xs={12}>
+                </div>
+              </div>
+            </Grid>
+            <Grid item md={6}>
+              <div className="formsecton">
+                <form>
+                  <label className="fromtitle">Your Name </label>
+                  <InputField type="name" className="inputfild" id="outlined-basic" placeholder="Please Enter your name" />
+
+                  <label className="fromtitle">Your Gmail </label>
+                  <InputField type="email" className="inputfild" id="outlined-basic" placeholder="Enter your Gmail" />
+
+                  <label className="fromtitle">Your Phone Number </label>
+                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
+
+                  <label className="fromtitle"> Subject </label>
+                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
+
+                  <TextField className="fromdescripton" id="standard-multiline-static" multiline rows={4} />
+
                   <div className="submit">
                     <Button className="button">
                       SEND MESSAGE
                       <ArrowForwardIcon />
                     </Button>
                   </div>
-                </Grid>
-              </Grid>
-            </div>
+                </form>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
       </Container>
     </Section>
   );

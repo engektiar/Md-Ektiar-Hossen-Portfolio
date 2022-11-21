@@ -37,7 +37,7 @@ export default function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        thechlog-bd
+        Md Ektiar Hossen
       </Typography>
       <Divider />
       <List>
@@ -63,7 +63,7 @@ export default function DrawerAppBar(props) {
               <MenuIcon />
             </IconButton>
             <Typography className="userName" variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-              thechlog-bd
+              Md Ektiar Hossen
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
