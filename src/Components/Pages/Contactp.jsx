@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import InputField from "@mui/material/TextField";
+import { useForm } from "react-hook-form";
 const Section = styled.section`
   padding-bottom: 50px;
   .contactpage {
@@ -136,6 +137,10 @@ const Section = styled.section`
     background: #dd1023;
     padding: 10px;
   }
+  .textdanger {
+    color: red;
+    font-size: 14px;
+  }
 
   /* from area End */
 `;
@@ -161,6 +166,14 @@ const Title = styled.h1`
 `;
 
 function Mycontact(props) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <Section>
       <Container>
@@ -229,8 +242,18 @@ function Mycontact(props) {
               <div className="formsecton">
                 <form>
                   <label className="fromtitle">Your Name </label>
-                  <InputField type="name" className="inputfild" id="outlined-basic" placeholder="Please Enter your name" />
-
+                  <InputField
+                    type="text"
+                    id="outlined-basic"
+                    placeholder="Please Enter your name"
+                    {...register("name", { required: true })}
+                    className={errors.name ? "from-control is-invalid" : "inputfild"}
+                  />
+                  {errors.name?.type === "required" && (
+                    <p className="textdanger" role="alert">
+                      First name is required
+                    </p>
+                  )}
                   <label className="fromtitle">Your Gmail </label>
                   <InputField type="email" className="inputfild" id="outlined-basic" placeholder="Enter your Gmail" />
 
@@ -243,7 +266,7 @@ function Mycontact(props) {
                   <TextField className="fromdescripton" id="standard-multiline-static" multiline rows={4} />
 
                   <div className="submit">
-                    <Button className="button">
+                    <Button className="button" type="submit">
                       SEND MESSAGE
                       <ArrowForwardIcon />
                     </Button>
