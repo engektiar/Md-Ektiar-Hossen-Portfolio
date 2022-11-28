@@ -7,6 +7,11 @@ import Typewriter from "typewriter-effect";
 import Social from "../SocialIcone/Social";
 import abicon from "../assets/images/aboutsicon.svg";
 const Section = styled.section`
+  margin: 0 auto !important;
+
+  .about {
+    margin: 0 auto !important;
+  }
   & h4 {
     font-size: 22px;
     line-height: 30px;
@@ -78,7 +83,7 @@ const ContentArea = styled.div`
   & h1 {
     background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 400%;
-    font-size: 0px;
+    font-size: 50px;
     font-weight: 700;
     word-spacing: 5px;
     -webkit-text-fill-color: transparent;
@@ -110,26 +115,49 @@ const ContentArea = styled.div`
   }
 `;
 
+const Title = styled.h1`
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+  margin: 60px 0px;
+  text-transform: capitalize;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 3px;
+    background: #ea3a60;
+    left: 43%;
+    bottom: -18%;
+  }
+`;
+
 const About = () => {
   return (
     <Section className="sectionStart">
       <Container>
-        <div className="section-title">
-          <h1>About</h1>
-        </div>
+        {/* <div className="icons">
+          <img className="titleicon" src={abicon} alt="" />
+        </div> */}
+
+        <Title>About</Title>
+
         <Grid container spacing={5} className="about">
-          <Grid item md={6}>
+          <Grid item md={5}>
             <ContentArea>
               <h2>
-                <span style={{ color: "#ee0c0c", fontSize: "1em" }}> Hello, I’m </span>
+                <span style={{ color: "#ee0c0c", fontSize: "1.5em" }}> Hello, I’m </span>
               </h2>
-              <h1>Md.Ektiar Hossen</h1>
+              <h1>Md. Ektiar Hossen </h1>
               <h4 className="autotyle">
                 I work with ,
                 <span>
                   <Typewriter
                     options={{
-                      strings: ["HTML", "CSS", "Scss", "Bootstrap", "JavaScrpt", "Angular"],
+                      strings: ["HTML", "CSS", "Scss", "Bootstrap", "JavaScrpt", "React Js"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -143,6 +171,7 @@ const About = () => {
               <StreangthArea>
                 <MdDoubleArrow />
                 <Typography className="items" variant="p">
+                  {" "}
                   Honest and dedicated
                 </Typography>
               </StreangthArea>
@@ -156,6 +185,7 @@ const About = () => {
               <StreangthArea>
                 <MdDoubleArrow />
                 <Typography className="items" variant="p">
+                  {" "}
                   BAffordable Security Packages & Detailed Results{" "}
                 </Typography>
               </StreangthArea>
@@ -170,7 +200,7 @@ const About = () => {
               Download CV &nbsp; <FaDownload />{" "}
             </CustBtn>
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={5}>
             <div className="aboutperson">
               <img className="aboutimg" src={ektiar} alt="no img" />
             </div>

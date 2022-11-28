@@ -23,18 +23,37 @@ const Section = styled.section`
   }
 `;
 
+const Title = styled.h1`
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+  margin: 60px 0px;
+  text-transform: capitalize;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 3px;
+    background: #ea3a60;
+    left: 40%;
+    bottom: -18%;
+  }
+`;
+
 const Work = (props) => {
   return (
     <Section className="sectionStart">
       <Container>
-        <div className="section-title">
-          <h1>
-            My <span className="titleClore">Work</span>
-          </h1>
-        </div>
+        <Title>
+          My <span className="titleClore">Work</span>
+        </Title>
+
         <Grid container spacing={0}>
           <Grid item md={4}>
-            <WorkCard workingimg={workimg} />
+            <WorkCard workingimg={workimg} using="Hrml" />
           </Grid>
           <Grid item md={4}>
             <WorkCard workingimg={work2} />

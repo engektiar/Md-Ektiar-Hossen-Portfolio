@@ -30,19 +30,19 @@ const Social = () => {
     <Section>
       <ul className="footer-socials">
         <li className="list-inline-item">
-          <Link to="#">
-            <AiFillLinkedin />
-          </Link>
-        </li>
-        <li className="list-inline-item">
-          <Link to="#">
+          <a href="https://www.facebook.com/profile.php?id=100004813563045">
             <AiFillFacebook />
-          </Link>
+          </a>
         </li>
         <li className="list-inline-item">
-          <Link to="#">
+          <a href="https://www.linkedin.com/in/md-ektiar-hossen-667a90194/">
+            <AiFillLinkedin />
+          </a>
+        </li>
+        <li className="list-inline-item">
+          <a href="https://github.com/engektiar">
             <AiFillGithub />
-          </Link>
+          </a>
         </li>
         <li className="list-inline-item">
           <Link to="#">

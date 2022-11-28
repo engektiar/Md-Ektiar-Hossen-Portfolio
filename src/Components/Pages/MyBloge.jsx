@@ -10,8 +10,6 @@ import Button from "@mui/material/Button";
 import MYBloCard from "./MyCard";
 
 const Section = styled.section`
-  background: #ecf0f3;
-  padding-bottom: 50px;
   cursor: pointer;
   .cardbutton {
     display: flex;

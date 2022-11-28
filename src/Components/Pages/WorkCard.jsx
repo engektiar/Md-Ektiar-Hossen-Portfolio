@@ -38,14 +38,14 @@ const WorkCard = (props) => {
             <img className="cardimg" src={props.workingimg} alt="" />
           </div>
           <div className="cardequment">
-            <span>Html</span>
+            <span>HTML</span>
             <span>CSS</span>
-            <span>Html</span>
-            <span>Html</span>
-            <span>Html</span>
+            <span>Material Ui</span>
+            <span>React js</span>
+            <span> components</span>
           </div>
           <div className="cardtitle">
-            <h2 className="subtitle">This is card title </h2>
+            <h2 className="subtitle">amazon e-commerce clone </h2>
           </div>
           <div className="cardtitle">
             <p className="textclor">

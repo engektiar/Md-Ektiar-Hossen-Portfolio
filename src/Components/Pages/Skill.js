@@ -29,15 +29,34 @@ const Section = styled.section`
     margin-left: 5px;
   }
 `;
+
+const Title = styled.h1`
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+  margin: 60px 0px;
+  text-transform: capitalize;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 38%;
+    height: 3px;
+    background: #ea3a60;
+    left: 31%;
+    bottom: -18%;
+  }
+`;
 const Skill = () => {
   return (
     <Section className="sectionStart">
       <Container>
-        <div className="section-title">
-          <h1>
-            Professional <span className="titleClore">skills</span>
-          </h1>
-        </div>
+        <Title>
+          Professional <span className="titleClore">skills</span>
+        </Title>
+
         <Grid container spacing={2}>
           <Grid item md={3}>
             <div className="progressbar">

@@ -214,12 +214,12 @@ function Mycontact(props) {
                   <div className="name">FIND WITH ME</div>
                   <div className="social-icone">
                     <div className="icon">
-                      <a href="#">
+                      <a href="https://www.facebook.com/profile.php?id=100004813563045">
                         <FacebookIcon className="contIcon" />
                       </a>
                     </div>
                     <div className="icon">
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/md-ektiar-hossen-667a90194/">
                         <LinkedInIcon className="contIcon" />
                       </a>
                     </div>
