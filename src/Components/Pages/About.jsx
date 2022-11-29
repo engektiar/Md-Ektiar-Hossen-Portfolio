@@ -5,7 +5,9 @@ import styled from "styled-components";
 import ektiar from "../assets/images/ektiar.png";
 import Typewriter from "typewriter-effect";
 import Social from "../SocialIcone/Social";
+import Resume from "../CV/ektiarHossen.pdf";
 import abicon from "../assets/images/aboutsicon.svg";
+
 const Section = styled.section`
   margin: 0 auto !important;
 
@@ -45,6 +47,15 @@ const Section = styled.section`
     display: flex;
     justify-content: right;
   }
+  .resume {
+    background-color: #ea3a60;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .mycv:hover {
+    background-color: #ea3a60;
+    
 `;
 const CustBtn = styled(Button)`
   color: #fff !important;
@@ -197,7 +208,9 @@ const About = () => {
               </StreangthArea>
             </StrengthWrapper>
             <CustBtn>
-              Download CV &nbsp; <FaDownload />{" "}
+              <a href={Resume} download className="mycv">
+                <button className="button s-button resume">Download CV</button>
+              </a>
             </CustBtn>
           </Grid>
           <Grid item md={5}>

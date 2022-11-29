@@ -45,9 +45,9 @@ const Social = () => {
           </a>
         </li>
         <li className="list-inline-item">
-          <Link to="#">
+          <a href="#">
             <FaDownload />
-          </Link>
+          </a>
         </li>
       </ul>
     </Section>
