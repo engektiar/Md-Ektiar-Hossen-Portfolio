@@ -10,6 +10,7 @@ import javascript from "../../Components/Images/skillicon/javascript.png";
 import Reactjs from "../../Components/Images/skillicon/Reactjs.png";
 import matrialui from "../../Components/Images/skillicon/matrialui.png";
 import GitHub from "../../Components/Images/skillicon/GitHub.png";
+import typescript from "../../Components/Images/skillicon/typescript.png";
 const Section = styled.section`
   .progressbar {
   }
@@ -121,6 +122,15 @@ const Skill = () => {
                 <img className="logo" src={GitHub} alt="" />
               </div>
               <Progressbars percentage="70" pathColor="#DAA520" textColor="#000000f6" />
+            </div>
+          </Grid>
+          <Grid item md={3}>
+            <div className="progressbar">
+              <div className="logotile">
+                <p className="protitle">Typescript</p>
+                <img className="logo" src={typescript} alt="" />
+              </div>
+              <Progressbars percentage="50" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
         </Grid>
