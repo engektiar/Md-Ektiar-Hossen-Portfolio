@@ -13,20 +13,28 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Section = styled.section`
   .userName {
     text-transform: uppercase;
   }
-  .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
-    background: #121316;
+  .header {
+    background-color: #fff;
+    color: #333;
+  }
+  .names {
+    color: #333;
+  }
+  .item {
+    text-decoration: none;
   }
 `;
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "servises", "Experience", "contact"];
+const navItems = ["Home", "About", "servises", "Skill", "MyProject", "Contact", "footer"];
 
-export default function DrawerAppBar(props) {
+export default function Header(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -44,6 +52,9 @@ export default function DrawerAppBar(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
+              <Link to={`/${item}`} className="item">
+                {item}
+              </Link>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -57,19 +68,26 @@ export default function DrawerAppBar(props) {
   return (
     <Section>
       <Box sx={{ display: "flex" }}>
-        <AppBar component="nav">
+        <AppBar component="nav" className="header">
           <Toolbar>
             <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { sm: "none" } }}>
               <MenuIcon />
             </IconButton>
+
             <Typography className="userName" variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-              Md Ektiar Hossen
+              <Link to="/" className="item active names">
+                {" "}
+                Md Ektiar Hossen{" "}
+              </Link>
             </Typography>
+
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
+                <Link to={`/${item}`} spy={true} smooth={true} className="item active">
+                  <Button key={item} sx={{ color: "#333" }}>
+                    {item}
+                  </Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>
@@ -81,7 +99,7 @@ export default function DrawerAppBar(props) {
             open={mobileOpen}
             onClose={handleDrawerToggle}
             ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
+              keepMounted: true,
             }}
             sx={{
               display: { xs: "block", sm: "none" },
@@ -95,6 +113,8 @@ export default function DrawerAppBar(props) {
           <Toolbar />
         </Box>
       </Box>
+
+      <div></div>
     </Section>
   );
 }

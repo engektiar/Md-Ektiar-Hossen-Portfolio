@@ -101,7 +101,7 @@ const Skill = () => {
                 <p className="protitle">React-js</p>
                 <img className="logo" src={Reactjs} alt="" />
               </div>
-              <Progressbars percentage="50" pathColor="#DAA520" textColor="#000000f6" />
+              <Progressbars percentage="70" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
 
@@ -111,7 +111,7 @@ const Skill = () => {
                 <p className="protitle">matrial-ui</p>
                 <img className="logo" src={matrialui} alt="" />
               </div>
-              <Progressbars percentage="80" pathColor="#DAA520" textColor="#000000f6" />
+              <Progressbars percentage="70" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
 
@@ -130,7 +130,7 @@ const Skill = () => {
                 <p className="protitle">Typescript</p>
                 <img className="logo" src={typescript} alt="" />
               </div>
-              <Progressbars percentage="50" pathColor="#DAA520" textColor="#000000f6" />
+              <Progressbars percentage="60" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
         </Grid>

@@ -40,7 +40,10 @@ function MYblog(props) {
   return (
     <Section>
       <Container>
-        <Title>My Blog</Title>
+        <Title>
+          {" "}
+          My <span className="titleClore">Blog</span>
+        </Title>
         <Grid container spacing={2}>
           <Grid item md={4}>
             <MYBloCard cardimg={bging} />

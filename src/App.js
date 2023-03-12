@@ -1,10 +1,31 @@
 import React from "react";
-
-import Homes from "./Components/Homes.js";
+import Home from "./Components/Home";
+import { Routes, Route } from "react-router-dom";
+import About from "./Components/Pages/About";
+import Servieses from "./Components/Pages/Servises/Servieses";
+import Skill from "./Components/Pages/Skill";
+import Mycontact from "./Components/Pages/Contactp";
+import Footer from "./Components/Pages/Footer";
+import Header from "./Components/Pages/Header";
+import Banner from "./Components/Pages/Banner";
+import Work from "./Components/Pages/Work";
 function App() {
   return (
     <div>
-      <Homes />
+      <Header />
+
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="/Home" element={<Banner />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/servises" element={<Servieses />} />
+          <Route path="/Skill" element={<Skill />} />
+          <Route path="/MyProject" element={<Work />} />
+          <Route path="/Contact" element={<Mycontact />} />
+          <Route path="/footer" element={<Footer />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

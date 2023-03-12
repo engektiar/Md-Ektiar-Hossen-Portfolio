@@ -9,7 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import InputField from "@mui/material/TextField";
-import { useForm } from "react-hook-form";
+
 const Section = styled.section`
   padding-bottom: 50px;
   .contactpage {
@@ -166,18 +166,15 @@ const Title = styled.h1`
 `;
 
 function Mycontact(props) {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+  const handelsubmit = (event) => {
+    console.log(event);
   };
   return (
     <Section>
       <Container>
-        <Title>Contact With Me</Title>
+        <Title>
+          Contact <span className="titleClore">With Me</span>
+        </Title>
         <div className="contactpage">
           <Grid container spacing={2}>
             <Grid item md={6}>
@@ -193,17 +190,12 @@ function Mycontact(props) {
                   <p>I am available for freelance work. Connect with me via and call in to my account.</p>
                   <div className="contactnumber">
                     <div>
-                      <span className="names">
-                        Phone:
-                        <a href="#" className="contact">
-                          +01628414116
-                        </a>
-                      </span>
+                      <span className="names">Phone: +01628414116</span>
                     </div>
                     <div>
                       <span className="names">
                         Email:
-                        <a href="#" className="contact">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" className="contact">
                           eng.ektiar@gmail.com
                         </a>
                       </span>
@@ -240,20 +232,10 @@ function Mycontact(props) {
             </Grid>
             <Grid item md={6}>
               <div className="formsecton">
-                <form>
+                <form onSubmit={handelsubmit}>
                   <label className="fromtitle">Your Name </label>
-                  <InputField
-                    type="text"
-                    id="outlined-basic"
-                    placeholder="Please Enter your name"
-                    {...register("name", { required: true })}
-                    className={errors.name ? "from-control is-invalid" : "inputfild"}
-                  />
-                  {errors.name?.type === "required" && (
-                    <p className="textdanger" role="alert">
-                      First name is required
-                    </p>
-                  )}
+                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter your  Name" />
+
                   <label className="fromtitle">Your Gmail </label>
                   <InputField type="email" className="inputfild" id="outlined-basic" placeholder="Enter your Gmail" />
 

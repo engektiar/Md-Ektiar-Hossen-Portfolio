@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import React from "react";
 import baner from "../assets/images/bannerlogo.gif";
-const Section = styled.section`
-  margin: 0 auto ! !important;
 
+const Section = styled.section`
+  margin: 0 auto !important;
   .bannerLeftSide {
     text-align: center;
   }
@@ -17,10 +17,12 @@ const Section = styled.section`
   }
   .hadingTitle {
     width: auto;
-    margin-top: 60px;
+    margin-top: 90px;
+    font-size: 30px;
   }
   .bangerdesc {
     width: 460px;
+    font-size: 18px;
     height: auto;
   }
 
@@ -33,35 +35,33 @@ const Section = styled.section`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  color: #333;
-  font-weight: 600;
-  letter-spacing: 5px;
-  position: relative;
+// const Title = styled.h1`
+//   font-size: 40px;
+//   text-align: center;
+//   color: #333;
+//   font-weight: 600;
+//   letter-spacing: 5px;
+//   position: relative;
 
-  text-transform: capitalize;
-  &:after {
-    position: absolute;
-    content: "";
-    width: 82%;
-    height: 3px;
-    background: #ea3a60;
-    left: 9%;
-    bottom: -18%;
-  }
-`;
-const Bannerd = () => {
+//   text-transform: capitalize;
+//   &:after {
+//     position: absolute;
+//     content: "";
+//     width: 82%;
+//     height: 3px;
+//     background: #ea3a60;
+//     left: 9%;
+//     bottom: -18%;
+//   }
+// `;
+const Banner = () => {
   return (
-    <Section>
+    <Section id="Home">
       <Grid container spacing={2}>
         <Grid item md={6} className="bannerLeftSide">
-          <Title>
-            <h4 className="hadingTitle">
-              Hello! I am <span className="name">Md Ektiar Hossen</span>
-            </h4>
-          </Title>
+          <h4 className="hadingTitle">
+            HELLO ! I AM <span className="name">MD EKTIAR HOSSEN</span>
+          </h4>
 
           <div className="description">
             <p className="bangerdesc   ">
@@ -79,4 +79,4 @@ const Bannerd = () => {
   );
 };
 
-export default Bannerd;
+export default Banner;

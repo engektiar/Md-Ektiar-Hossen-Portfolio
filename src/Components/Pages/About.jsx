@@ -1,16 +1,13 @@
 import { Button, Container, Grid, Typography } from "@mui/material";
-import { FaDownload } from "react-icons/fa";
 import { MdDoubleArrow } from "react-icons/md";
 import styled from "styled-components";
 import ektiar from "../assets/images/ektiar.png";
 import Typewriter from "typewriter-effect";
 import Social from "../SocialIcone/Social";
 import Resume from "../CV/ektiarHossen.pdf";
-import abicon from "../assets/images/aboutsicon.svg";
 
 const Section = styled.section`
   margin: 0 auto !important;
-
   .about {
     margin: 0 auto !important;
   }
@@ -47,15 +44,19 @@ const Section = styled.section`
     display: flex;
     justify-content: right;
   }
-  .resume {
-    background-color: #ea3a60;
+  .mycv {
     border: none;
     font-size: 16px;
     text-transform: capitalize;
+    text-decoration: none;
+    color: #333;
   }
-  .mycv:hover {
-    background-color: #ea3a60;
-    
+  .username {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
 `;
 const CustBtn = styled(Button)`
   color: #fff !important;
@@ -160,9 +161,9 @@ const About = () => {
           <Grid item md={5}>
             <ContentArea>
               <h2>
-                <span style={{ color: "#ee0c0c", fontSize: "1.5em" }}> Hello, I’m </span>
+                <span style={{ color: "#ee0c0c", fontSize: "30px" }}> Hello, I’m </span>
               </h2>
-              <h1>Md. Ektiar Hossen </h1>
+              <h1 className="username">Md. Ektiar Hossen </h1>
               <h4 className="autotyle">
                 I work with ,
                 <span>
@@ -209,7 +210,7 @@ const About = () => {
             </StrengthWrapper>
             <CustBtn>
               <a href={Resume} download className="mycv">
-                <button className="button s-button resume">Download CV</button>
+                Download CV
               </a>
             </CustBtn>
           </Grid>

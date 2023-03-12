@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
-import serviseicon from "../../assets/images/serviseicon.svg";
+
 import ServsceCard from "./ServsceCard.js";
 import webicon from "../../assets/images/web-design.gif";
 import webdevlopm from "../../assets/images/web-development-design.gif";
@@ -35,9 +35,10 @@ const Servieses = (props) => {
         <Title>Service</Title>
         {/* <div className="icons">
           <img className="titleicon" src={serviseicon} alt="missing" />
-        </div> */}
+   
+   </div> */}
 
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid item md={4}>
             <ServsceCard
               icon={webicon}

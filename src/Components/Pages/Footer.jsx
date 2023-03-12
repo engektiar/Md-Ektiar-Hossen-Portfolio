@@ -8,8 +8,8 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Section = styled.section`
-  background: #11141b;
-  color: #ffff;
+  background: #0f0f0f;
+  color: #fff;
   height: auto;
   padding-bottom: 60px;
   margin-top: 60px;
@@ -64,12 +64,12 @@ function Footer(props) {
                 <h5 className="footertitle">TEXT WIDGET</h5>
                 <div className="info">
                   <p className="footertext">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, tempore cupiditate itaque nihil qui modi facilis magnam quod natus non a animi incidunt unde
-                    sint vitae odit nobis quae fugiat!
+                    User experience: Front-end developers are responsible for building the user interface (UI) and ensuring that it is user-friendly and easy to navigate. A good
+                    user experience is essential to keep users engaged and coming back to the website or application.
                   </p>
                   <p className="footertext">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, tempore cupiditate itaque nihil qui modi facilis magnam quod natus non a animi incidunt unde
-                    sint vitae odit nobis quae fugiat!
+                    Mobile responsiveness: With more users accessing the internet through mobile devices, it's crucial to have a website or application that is responsive and can
+                    adapt to different screen sizes. Front-end developers can ensure that the website or application is mobile-friendly and responsive.
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ function Footer(props) {
               <div className="footerarea">
                 <h5 className="footertitle">FOLLOW ME</h5>
                 <div className="info">
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=100004813563045">
                     <FacebookIcon className="socialicon fasticon" />
                   </a>
                   <a href="#">
@@ -87,7 +87,7 @@ function Footer(props) {
                   <a href="#">
                     <WhatsAppIcon className="socialicon" />
                   </a>
-                  <a href="#">
+                  <a href="https://github.com/engektiar">
                     <GitHubIcon className="socialicon" />
                   </a>
                   <a href="#">

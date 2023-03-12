@@ -1,5 +1,4 @@
-import * as React from "react";
-
+import React, { useState } from "react";
 import { Container } from "@mui/system";
 import styled from "styled-components";
 
@@ -9,11 +8,16 @@ const Cardsection = styled.div`
     border: 1px solid #3b4251;
     box-shadow: 0 2px 20px 1px rgb(0 0 0 / 49%);
     width: 100%;
-    padding: 10px;
+    padding: 15px;
   }
   .cardMedia {
     height: 250px;
     overflow-y: scroll;
+  }
+  .mylink {
+    text-transform: none;
+    cursor: pointer;
+    text-decoration: none !important;
   }
 
   .cardimg {
@@ -21,41 +25,65 @@ const Cardsection = styled.div`
   }
   .cardequment {
     margin-top: 10px;
+    height: 50px;
   }
-  .cardequment span {
+  .item {
     background: #ffe4e6;
     margin: 4px;
-    color: #ab2c4e;
+    color: #333;
+    text-transform: capitalize;
     font-weight: 700px;
+    border-radius: 20px;
+    padding: 0 10px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .subtitle {
+    text-transform: capitalize;
+  }
+  .read {
+    color: red;
+    cursor: pointer;
+    text-transform: capitalize;
   }
 `;
-const WorkCard = (props) => {
+const WorkCard = ({ workingimg, weblink, item1, item2, item3, item4, title, detieals, item5 }) => {
   return (
-    <Cardsection>
-      <Container>
-        <div className="card">
-          <div className="cardMedia">
-            <img className="cardimg" src={props.workingimg} alt="" />
+    <>
+      <Cardsection>
+        <Container>
+          <div className="card">
+            <a href={weblink} className="mylink">
+              <div className="cardMedia">
+                <img className="cardimg" src={workingimg} alt="missing" />
+              </div>
+            </a>
+            <div className="cardequment">
+              <span className="item">{item1}</span>
+              <span className="item">{item2}</span>
+              <span className="item"> {item3}</span>
+              <span className="item">{item4}</span>
+              <span className="item">{item5}</span>
+            </div>
+            <div className="cardtitle">
+              <h2 className="subtitle">{title}</h2>
+            </div>
+
+            <div className="cardtitle">
+              {/* <p hidden={more != 0} className="textclor">
+                {detieals.slice(0, 150)}
+              </p>
+              <p hidden={more != 1} className="textclor">
+                {detieals}
+              </p>
+              <span onClick={() => setmore(!more)} className="read">
+                read more
+              </span> */}
+            </div>
           </div>
-          <div className="cardequment">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Material Ui</span>
-            <span>React js</span>
-            <span> components</span>
-          </div>
-          <div className="cardtitle">
-            <h2 className="subtitle">amazon e-commerce clone </h2>
-          </div>
-          <div className="cardtitle">
-            <p className="textclor">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque unde quo ducimus et, accusantium cupiditate vitae assumenda alias, ratione adipisci error
-              exercitationem minus quis itaque repellat. Molestias totam odio veniam!
-            </p>
-          </div>
-        </div>
-      </Container>
-    </Cardsection>
+        </Container>
+      </Cardsection>
+    </>
   );
 };
 

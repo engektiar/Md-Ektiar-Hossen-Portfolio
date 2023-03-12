@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ServesData from "./ServesData.json";
 
@@ -24,9 +24,17 @@ const Section = styled.section`
   .serviseTitle {
     text-align: center;
   }
+  .readMore {
+    color: red;
+    cursor: pointer;
+  }
+  .carddetils {
+    margin-bottom: -15px;
+  }
 `;
 const ServsceCard = (props) => {
   const { icon, title, dec } = props;
+  const [more, setmore] = useState(false);
   return (
     <Section>
       <Card className="CardMain" sx={{ minWidth: 275 }}>
@@ -37,8 +45,17 @@ const ServsceCard = (props) => {
               {title}
             </Typography>
           </div>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            <p className="textclor"> {dec}</p>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary" className="carddetils">
+            <p hidden={more != 0} className="textclor">
+              {dec.slice(0, 150)}
+            </p>
+
+            <p hidden={more != 1} className="textclor">
+              {dec}
+            </p>
+            <span onClick={() => setmore(!more)} className="readMore">
+              Read More
+            </span>
           </Typography>
         </CardContent>
       </Card>
