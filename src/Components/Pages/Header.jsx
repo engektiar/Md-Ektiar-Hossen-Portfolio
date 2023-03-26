@@ -73,7 +73,7 @@ export default function Header(props) {
             </IconButton>
 
             <Typography className="userName" variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-              <Link to="/home" className="item active names">
+              <Link to="/" className="item active names">
                 {" "}
                 Md Ektiar Hossen{" "}
               </Link>
