@@ -210,13 +210,13 @@ function Mycontact(props) {
                     </a>
                   </div>
                   <div className="icon">
-                    <a href="#">
+                    <a href="http://wa.me/01628414116">
                       <WhatsAppIcon className="contIcon" />
                     </a>
                   </div>
 
                   <div className="icon">
-                    <a href="#">
+                    <a href="https://www.instagram.com/md_ektair/">
                       <InstagramIcon className="contIcon" />
                     </a>
                   </div>

@@ -80,16 +80,16 @@ function Footer(props) {
                 <a href="https://www.facebook.com/profile.php?id=100004813563045">
                   <FacebookIcon className="socialicon fasticon" />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/EktiarHossen">
                   <TwitterIcon className="socialicon" />
                 </a>
-                <a href="#">
+                <a href="http://wa.me/01628414116">
                   <WhatsAppIcon className="socialicon" />
                 </a>
                 <a href="https://github.com/engektiar">
                   <GitHubIcon className="socialicon" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/md_ektair/">
                   <InstagramIcon className="socialicon" />
                 </a>
               </div>
