@@ -52,9 +52,7 @@ export default function Header(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <Link to={`/${item}`} className="item">
-                {item}
-              </Link>
+              <Link style={{ textDecoration: "none" }} to={`/${item}`} className="item" />
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -75,7 +73,7 @@ export default function Header(props) {
             </IconButton>
 
             <Typography className="userName" variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-              <Link to="/" className="item active names">
+              <Link to="/home" className="item active names">
                 {" "}
                 Md Ektiar Hossen{" "}
               </Link>
@@ -83,7 +81,7 @@ export default function Header(props) {
 
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Link to={`/${item}`} spy={true} smooth={true} className="item active">
+                <Link style={{ textDecoration: "none" }} to={`/${item}`} spy={true} smooth={true} className="item active">
                   <Button key={item} sx={{ color: "#333" }}>
                     {item}
                   </Button>

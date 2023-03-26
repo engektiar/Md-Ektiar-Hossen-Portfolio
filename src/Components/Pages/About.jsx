@@ -7,7 +7,6 @@ import Social from "../SocialIcone/Social";
 import Resume from "../CV/ektiarHossen.pdf";
 
 const Section = styled.section`
-  padding: 20px;
   padding-bottom: 30px;
   & h4 {
     font-size: 22px;
@@ -150,7 +149,7 @@ const About = () => {
         </div> */}
         <Title>About</Title>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item md={6} sm={12} xs={12}>
             <ContentArea>
               <h2>
                 <span style={{ color: "#ee0c0c", fontSize: "30px" }}> Hello, I’m </span>
@@ -204,7 +203,7 @@ const About = () => {
               </a>
             </CustBtn>
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} sm={12} xs={12}>
             <div className="aboutperson">
               <img className="aboutimg" src={ektiar} alt="no img" />
             </div>

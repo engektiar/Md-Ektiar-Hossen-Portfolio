@@ -6,7 +6,7 @@ import Servieses from "./Components/Pages/Servises/Servieses";
 import Skill from "./Components/Pages/Skill";
 import Mycontact from "./Components/Pages/Contactp";
 import Header from "./Components/Pages/Header";
-import Banner from "./Components/Pages/Banner";
+
 import Work from "./Components/Pages/Work";
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
-          <Route path="/Home" element={<Banner />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/servises" element={<Servieses />} />
           <Route path="/Skill" element={<Skill />} />

@@ -41,21 +41,21 @@ const Servieses = (props) => {
    
    </div> */}
         <Grid container spacing={1}>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <ServsceCard
               icon={webicon}
               title="Web Design"
               dec="Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website's overall functionality. Web design also includes web apps, mobile apps, and user interface design."
             />
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <ServsceCard
               icon={webdevlopm}
               title="web development"
               dec="Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services."
             />
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <ServsceCard
               icon={digitalMarkgin}
               title="digital marketing"

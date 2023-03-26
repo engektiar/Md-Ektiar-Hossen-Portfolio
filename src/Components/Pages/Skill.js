@@ -59,7 +59,7 @@ const Skill = () => {
         </Title>
 
         <Grid container spacing={2}>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">Html</p>
@@ -68,7 +68,7 @@ const Skill = () => {
               <Progressbars percentage="90" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">css</p>
@@ -77,7 +77,7 @@ const Skill = () => {
               <Progressbars percentage="80" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">Bootstrap</p>
@@ -86,7 +86,7 @@ const Skill = () => {
               <Progressbars percentage="80" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">javascript</p>
@@ -95,7 +95,7 @@ const Skill = () => {
               <Progressbars percentage="60" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">React-js</p>
@@ -105,7 +105,7 @@ const Skill = () => {
             </div>
           </Grid>
 
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">matrial-ui</p>
@@ -115,7 +115,7 @@ const Skill = () => {
             </div>
           </Grid>
 
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">GitHub</p>
@@ -124,7 +124,7 @@ const Skill = () => {
               <Progressbars percentage="70" pathColor="#DAA520" textColor="#000000f6" />
             </div>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={6} xs={6}>
             <div className="progressbar">
               <div className="logotile">
                 <p className="protitle">Typescript</p>

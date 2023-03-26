@@ -176,7 +176,7 @@ function Mycontact(props) {
           Contact <span className="titleClore ">With Me</span>
         </Title>
         <Grid container spacing={2} className="contactme">
-          <Grid item md={6}>
+          <Grid item md={6} sm={12} xs={12}>
             <div className="contact-about-area">
               <div className="thumbnail">
                 <img src={c2} alt="" className="contactimg" />
@@ -224,7 +224,7 @@ function Mycontact(props) {
               </div>
             </div>
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} sm={12} xs={12}>
             <div className="formsecton">
               <form onSubmit={handelsubmit}>
                 <label className="fromtitle">Your Name </label>

@@ -50,7 +50,7 @@ const Banner = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Container>
           <Grid container spacing={2}>
-            <Grid item md={6}>
+            <Grid item md={6} sm={12} xs={12}>
               <div className="banerleftside">
                 <h4 className="hadingTitle">
                   HELLO ! I AM <span className="name">MD EKTIAR HOSSEN</span>
@@ -63,7 +63,7 @@ const Banner = () => {
                 </p>
               </div>
             </Grid>
-            <Grid item md={6}>
+            <Grid item md={6} sm={12} xs={12}>
               <div className="banerimage">
                 <img className="banner-image" src={baner} alt="missing" />
               </div>

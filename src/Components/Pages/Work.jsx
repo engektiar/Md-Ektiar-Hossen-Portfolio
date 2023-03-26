@@ -98,7 +98,7 @@ const Work = (props) => {
           My <span className="titleClore">Project</span>
         </Title>
         <Grid container spacing={0}>
-          <Grid item md={4} className="secoundpart">
+          <Grid item md={4} sm={12} xs={12} className="secoundpart">
             <WorkCard
               workingimg={adminpnale}
               weblink={adminLink}
@@ -111,7 +111,7 @@ const Work = (props) => {
               item5="Bootstrap"
             />
           </Grid>
-          <Grid item md={4} className="secoundpart">
+          <Grid item md={4} sm={12} xs={12} className="secoundpart">
             <WorkCard
               workingimg={login}
               weblink={loginlink}
@@ -124,7 +124,7 @@ const Work = (props) => {
               item5="Button"
             />
           </Grid>
-          <Grid item md={4} className="secoundpart">
+          <Grid item md={4} sm={12} xs={12} className="secoundpart">
             <WorkCard
               workingimg={crud}
               weblink={crudlink}
@@ -141,7 +141,7 @@ const Work = (props) => {
 
         <div>
           <Grid container spacing={0}>
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard
                 workingimg={emazoon}
                 weblink={amazoonLink}
@@ -154,7 +154,7 @@ const Work = (props) => {
                 item5="Button"
               />
             </Grid>
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard
                 workingimg={daraz}
                 weblink={darazLink}
@@ -167,17 +167,17 @@ const Work = (props) => {
                 detieals={detieals}
               />
             </Grid>
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard workingimg={cuda} weblink={cudaLink} item1="Html" item2="CSS" item3="javascript" item4="fonts-aswome" item5=" Icon" title={cudas} detieals={detieals} />
             </Grid>
             {/* 2nd part */}
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard workingimg={acdick} title={edu} weblink={edulink} item1="Html" item2="CSS" item3="javascript" item4="fonts-aswome" item5="Button" />
             </Grid>
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard workingimg={school} weblink={schoolLink} title={schools} item1="Html" item2="CSS" item3="javascript" item4="fonts-aswome" item5="Icon" />
             </Grid>
-            <Grid item md={4} className="secoundpart">
+            <Grid item md={4} sm={12} xs={12} className="secoundpart">
               <WorkCard workingimg={edus} weblink={acdlink} title={edu} item1="Html" item2="CSS" item3="javascript" item4="fonts-aswome" item5="Icon" />
             </Grid>
           </Grid>

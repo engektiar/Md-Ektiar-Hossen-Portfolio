@@ -43,7 +43,7 @@ function Footer(props) {
     <Section>
       <Container>
         <Grid container spacing={4}>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <div className="footerarea">
               <h5 className="footertitle">CONTACT</h5>
               <div className="info">
@@ -58,7 +58,7 @@ function Footer(props) {
               </div>
             </div>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <div className="footerarea">
               <h5 className="footertitle">TEXT WIDGET</h5>
               <div className="info">
@@ -73,7 +73,7 @@ function Footer(props) {
               </div>
             </div>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <div className="footerarea">
               <h5 className="footertitle">FOLLOW ME</h5>
               <div className="info">
