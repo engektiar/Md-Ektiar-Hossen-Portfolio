@@ -11,11 +11,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import InputField from "@mui/material/TextField";
 
 const Section = styled.section`
-  padding-bottom: 50px;
-  .contactpage {
-    height: 640px;
-    margin-top: 50px;
-  }
+  padding: 20px;
+  padding-bottom: 30px;
   .thumbnail {
     display: flex;
     justify-content: center;
@@ -67,6 +64,9 @@ const Section = styled.section`
   }
   .contact:hover {
     color: red;
+  }
+  .contactme {
+    padding-top: 40px;
   }
   .name {
     text-transform: uppercase;
@@ -173,91 +173,84 @@ function Mycontact(props) {
     <Section>
       <Container>
         <Title>
-          Contact <span className="titleClore">With Me</span>
+          Contact <span className="titleClore ">With Me</span>
         </Title>
-        <div className="contactpage">
-          <Grid container spacing={2}>
-            <Grid item md={6}>
-              <div className="contact-about-area">
-                <div className="thumbnail">
-                  <img src={c2} alt="" className="contactimg" />
-                </div>
-                <div className="title-area">
-                  <h4 className="title">Md Ektiar Hossen</h4>
-                  <span>Junior Front End Developer</span>
-                </div>
-                <div className="description">
-                  <p>I am available for freelance work. Connect with me via and call in to my account.</p>
-                  <div className="contactnumber">
-                    <div>
-                      <span className="names">Phone: +01628414116</span>
-                    </div>
-                    <div>
-                      <span className="names">
-                        Email:
-                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" className="contact">
-                          eng.ektiar@gmail.com
-                        </a>
-                      </span>
-                    </div>
+        <Grid container spacing={2} className="contactme">
+          <Grid item md={6}>
+            <div className="contact-about-area">
+              <div className="thumbnail">
+                <img src={c2} alt="" className="contactimg" />
+              </div>
+              <div className="title-area">
+                <h4 className="title">Md Ektiar Hossen</h4>
+                <span>Junior Front End Developer</span>
+              </div>
+              <div className="description">
+                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                <div className="contactnumber">
+                  <div>
+                    <span className="names">Phone: +01628414116</span>
                   </div>
-                </div>
-                <div className="social-area">
-                  <div className="name">FIND WITH ME</div>
-                  <div className="social-icone">
-                    <div className="icon">
-                      <a href="https://www.facebook.com/profile.php?id=100004813563045">
-                        <FacebookIcon className="contIcon" />
-                      </a>
-                    </div>
-                    <div className="icon">
-                      <a href="https://www.linkedin.com/in/md-ektiar-hossen-667a90194/">
-                        <LinkedInIcon className="contIcon" />
-                      </a>
-                    </div>
-                    <div className="icon">
-                      <a href="#">
-                        <WhatsAppIcon className="contIcon" />
-                      </a>
-                    </div>
-
-                    <div className="icon">
-                      <a href="#">
-                        <InstagramIcon className="contIcon" />
-                      </a>
-                    </div>
+                  <div>
+                    <span className="names">Email: eng.ektiar@gmail.com</span>
                   </div>
                 </div>
               </div>
-            </Grid>
-            <Grid item md={6}>
-              <div className="formsecton">
-                <form onSubmit={handelsubmit}>
-                  <label className="fromtitle">Your Name </label>
-                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter your  Name" />
-
-                  <label className="fromtitle">Your Gmail </label>
-                  <InputField type="email" className="inputfild" id="outlined-basic" placeholder="Enter your Gmail" />
-
-                  <label className="fromtitle">Your Phone Number </label>
-                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
-
-                  <label className="fromtitle"> Subject </label>
-                  <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
-
-                  <TextField className="fromdescripton" id="standard-multiline-static" multiline rows={4} />
-
-                  <div className="submit">
-                    <Button className="button" type="submit">
-                      SEND MESSAGE
-                      <ArrowForwardIcon />
-                    </Button>
+              <div className="social-area">
+                <div className="name">FIND WITH ME</div>
+                <div className="social-icone">
+                  <div className="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100004813563045">
+                      <FacebookIcon className="contIcon" />
+                    </a>
                   </div>
-                </form>
+                  <div className="icon">
+                    <a href="https://www.linkedin.com/in/md-ektiar-hossen-667a90194/">
+                      <LinkedInIcon className="contIcon" />
+                    </a>
+                  </div>
+                  <div className="icon">
+                    <a href="#">
+                      <WhatsAppIcon className="contIcon" />
+                    </a>
+                  </div>
+
+                  <div className="icon">
+                    <a href="#">
+                      <InstagramIcon className="contIcon" />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </Grid>
+            </div>
           </Grid>
-        </div>
+          <Grid item md={6}>
+            <div className="formsecton">
+              <form onSubmit={handelsubmit}>
+                <label className="fromtitle">Your Name </label>
+                <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter your  Name" />
+
+                <label className="fromtitle">Your Gmail </label>
+                <InputField type="email" className="inputfild" id="outlined-basic" placeholder="Enter your Gmail" />
+
+                <label className="fromtitle">Your Phone Number </label>
+                <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
+
+                <label className="fromtitle"> Subject </label>
+                <InputField type="text" className="inputfild" id="outlined-basic" placeholder="Enter Your Phone Number" />
+
+                <TextField className="fromdescripton" id="standard-multiline-static" multiline rows={4} />
+
+                <div className="submit">
+                  <Button className="button" type="submit">
+                    SEND MESSAGE
+                    <ArrowForwardIcon />
+                  </Button>
+                </div>
+              </form>
+            </div>
+          </Grid>
+        </Grid>
       </Container>
     </Section>
   );

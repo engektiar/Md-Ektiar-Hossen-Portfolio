@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 
-import React, { useState } from "react";
 import styled from "styled-components";
 import WorkCard from "./WorkCard";
 import daraz from "../assets/work/daraz.png";
@@ -15,6 +14,8 @@ import crud from "../assets/work/crud.png";
 import { Container } from "@mui/system";
 
 const Section = styled.section`
+  padding: 20px;
+  padding-bottom: 30px;
   .seeAll {
     display: flex;
     justify-content: center;
@@ -72,8 +73,7 @@ const Work = (props) => {
 
   const crudeabout =
     "CRUD stands for Create, Read, Update, and Delete operations. These are the basic operations that most applications require to interact with a database or API. In a React application, these operations can be performed using various methods and libraries";
-  const cudadeatils =
-    "A single page website is one that fits on a single page. Single page websites are fully loaded in the initial page load or page zones are replaced with new page fragments loaded from server on demand, making the experience more continuous and fluid for the user";
+
   const darazs = "Daraz e-commerce clone";
   const emazon = "amazon e-commerce clone";
   const admin = "Admin Panel  Design";
@@ -95,7 +95,7 @@ const Work = (props) => {
     <Section className="sectionStart">
       <Container>
         <Title>
-          My <span className="titleClore">Work</span>
+          My <span className="titleClore">Project</span>
         </Title>
         <Grid container spacing={0}>
           <Grid item md={4} className="secoundpart">

@@ -7,10 +7,8 @@ import Social from "../SocialIcone/Social";
 import Resume from "../CV/ektiarHossen.pdf";
 
 const Section = styled.section`
-  margin: 0 auto !important;
-  .about {
-    margin: 0 auto !important;
-  }
+  padding: 20px;
+  padding-bottom: 30px;
   & h4 {
     font-size: 22px;
     line-height: 30px;
@@ -33,16 +31,12 @@ const Section = styled.section`
     margin-bottom: 15px;
   }
   .aboutimg {
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    display: grid;
-    align-items: center;
     height: 480px;
   }
   .aboutperson {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
   }
   .mycv {
     border: none;
@@ -154,11 +148,9 @@ const About = () => {
         {/* <div className="icons">
           <img className="titleicon" src={abicon} alt="" />
         </div> */}
-
         <Title>About</Title>
-
-        <Grid container spacing={5} className="about">
-          <Grid item md={5}>
+        <Grid container>
+          <Grid item md={6}>
             <ContentArea>
               <h2>
                 <span style={{ color: "#ee0c0c", fontSize: "30px" }}> Hello, I’m </span>
@@ -169,7 +161,7 @@ const About = () => {
                 <span>
                   <Typewriter
                     options={{
-                      strings: ["HTML", "CSS", "Scss", "Bootstrap", "JavaScrpt", "React Js"],
+                      strings: ["Html", "Css", "Scss", "Bootstrap", "Tailwind", "JavaScrpt", "React Js", "Typescript", "React Redux"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -183,14 +175,12 @@ const About = () => {
               <StreangthArea>
                 <MdDoubleArrow />
                 <Typography className="items" variant="p">
-                  {" "}
                   Honest and dedicated
                 </Typography>
               </StreangthArea>
               <StreangthArea>
                 <MdDoubleArrow />
                 <Typography className="items" variant="p">
-                  {" "}
                   Able to meet deadline{" "}
                 </Typography>
               </StreangthArea>
@@ -214,7 +204,7 @@ const About = () => {
               </a>
             </CustBtn>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={6}>
             <div className="aboutperson">
               <img className="aboutimg" src={ektiar} alt="no img" />
             </div>

@@ -12,8 +12,8 @@ import matrialui from "../../Components/Images/skillicon/matrialui.png";
 import GitHub from "../../Components/Images/skillicon/GitHub.png";
 import typescript from "../../Components/Images/skillicon/typescript.png";
 const Section = styled.section`
-  .progressbar {
-  }
+  padding: 20px;
+  padding-bottom: 30px;
   .protitle {
     font-size: 20px;
     font-weight: 700;

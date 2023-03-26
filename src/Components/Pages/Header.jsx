@@ -32,7 +32,7 @@ const Section = styled.section`
 `;
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "servises", "Skill", "MyProject", "Contact", "footer"];
+const navItems = ["Home", "About", "servises", "Skill", "MyProject", "Contact"];
 
 export default function Header(props) {
   const { window } = props;

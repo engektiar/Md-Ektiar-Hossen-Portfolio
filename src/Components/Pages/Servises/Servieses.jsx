@@ -7,7 +7,10 @@ import ServsceCard from "./ServsceCard.js";
 import webicon from "../../assets/images/web-design.gif";
 import webdevlopm from "../../assets/images/web-development-design.gif";
 import digitalMarkgin from "../../assets/images/digitalMarkgin.gif";
-const Section = styled.section``;
+const Section = styled.section`
+  padding: 20px;
+  padding-bottom: 30px;
+`;
 
 const Title = styled.h1`
   font-size: 40px;
@@ -37,12 +40,11 @@ const Servieses = (props) => {
           <img className="titleicon" src={serviseicon} alt="missing" />
    
    </div> */}
-
         <Grid container spacing={1}>
           <Grid item md={4}>
             <ServsceCard
               icon={webicon}
-              title="Dev Design"
+              title="Web Design"
               dec="Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website's overall functionality. Web design also includes web apps, mobile apps, and user interface design."
             />
           </Grid>

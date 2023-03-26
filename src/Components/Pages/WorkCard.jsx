@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Container } from "@mui/system";
 import styled from "styled-components";
 
@@ -21,7 +20,7 @@ const Cardsection = styled.div`
   }
 
   .cardimg {
-    width: 300px;
+    width: 100%;
   }
   .cardequment {
     margin-top: 10px;
