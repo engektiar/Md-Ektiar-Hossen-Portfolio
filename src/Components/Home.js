@@ -7,6 +7,7 @@ import Servieses from "./Pages/Servises/Servieses";
 import "../App.css";
 import Work from "./Pages/Work";
 import Banner from "./Pages/Banner";
+import WhyHireMe from "./Pages/WhyHireMe";
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
       <Skill />
       <Work />
       <Mycontact />
+      <WhyHireMe />
       <Footer />
     </div>
   );

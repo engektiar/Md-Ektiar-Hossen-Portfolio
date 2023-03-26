@@ -29,9 +29,12 @@ const Section = styled.section`
     text-align: justify;
     font-size: 14px;
   }
+  .footericon {
+    margin-top: 50px;
+  }
   .socialicon {
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 40px;
     color: #ffff;
   }
   .fasticon {
@@ -76,7 +79,7 @@ function Footer(props) {
           <Grid item md={4} sm={12} xs={12}>
             <div className="footerarea">
               <h5 className="footertitle">FOLLOW ME</h5>
-              <div className="info">
+              <div className="info  footericon">
                 <a href="https://www.facebook.com/profile.php?id=100004813563045">
                   <FacebookIcon className="socialicon fasticon" />
                 </a>
